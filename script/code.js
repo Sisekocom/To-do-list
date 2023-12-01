@@ -22,7 +22,7 @@ function addItem() {
     todoList.push(newItem);
     saveTodoList(todoList);
     displayItems();
-    itemInput.value = ''; // Clear input field
+    itemInput.value = '';
 }
 
 function sortItems() {
@@ -33,15 +33,15 @@ function sortItems() {
 }
 
 function displayItems() {
-    const todoList = getTodoList();
-    const todoListContainer = document.getElementById('todoList');
+    let todoList = getTodoList();
+    let todoListContainer = document.getElementById('todoList');
     todoListContainer.innerHTML = '';
 
     if (todoList.length === 0) {
         todoListContainer.innerHTML = '<p>No tasks yet.</p>';
     } else {
         todoList.forEach(item => {
-            const itemElement = document.createElement('li');
+            let itemElement = document.createElement('li');
             itemElement.classList.add('todo-item');
             if (item.completed) {
                 itemElement.classList.add('completed');

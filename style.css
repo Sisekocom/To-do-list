@@ -24,14 +24,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid white;
     margin-bottom: 5px;
     background-color: #fff;
 }
 .completed {
-    text-decoration: line-through;
-    color: #aaa;
+    text-decoration:line-through;
+    color: black;
 }
 .delete-btn {
     cursor: pointer;
 }
+
