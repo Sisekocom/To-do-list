@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://th.bing.com/th/id/OIP.vCHDiVFPj1gfOvg7MN5xgwHaEK?rs=1&pid=ImgDetMain);
+}
+#To-Do List {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+    width: 100%;
+}
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+.delete-btn {
+    cursor: pointer;
+}
